@@ -2,8 +2,9 @@ import ProfileRadialGradient from "@/components/svg/radial-gradient";
 import "./profile.css";
 import ImageResize from "@/components/image-resize";
 import NavigationBarLink from "@/components/navigation-bar-link";
+import Image from "next/image";
 
-export default function () {
+export default function Page() {
     return (
         <main>
             <div id="Home" className="page">
@@ -25,7 +26,7 @@ export default function () {
                     <div id="Discord" className="profile-account">
                         <ProfileRadialGradient></ProfileRadialGradient>
 
-                        <img src="/Discord.png" className="profile-picture"></img>
+                        <Image alt="Discord" src="/Discord.png" className="profile-picture"></Image>
 
                         <p className="profile-name">#italovh</p>
                     </div>
@@ -34,7 +35,7 @@ export default function () {
                         <div id="Github" className="profile-account">
                             <ProfileRadialGradient></ProfileRadialGradient>
 
-                            <img src="/Github.png" className="profile-picture"></img>
+                            <Image alt="Github" src="/Github.png" className="profile-picture"></Image>
 
                             <p className="profile-name">ItaloYt</p>
                         </div>
@@ -44,7 +45,7 @@ export default function () {
                         <div id="Telegram" className="profile-account">
                             <ProfileRadialGradient></ProfileRadialGradient>
 
-                            <img src="/Telegram.png" className="profile-picture"></img>
+                            <Image alt="Telegram" src="/Telegram.png" className="profile-picture"></Image>
 
                             <p className="profile-name">@italovh</p>
                         </div>

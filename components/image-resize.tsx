@@ -1,5 +1,6 @@
 import React from "react";
 import imageSize from "image-size";
+import Image from "next/image";
 
 export default function ImageResize({ src, href }: { src: string, href: string }) {
     let { width, height } = imageSize("./public" + src);
@@ -19,6 +20,6 @@ export default function ImageResize({ src, href }: { src: string, href: string }
     }
 
     return (
-        <a href={href} target="_blank"><img width={width + "px"} height={height + "px"} src={src}></img></a>
+        <a href={href} target="_blank"><Image alt="" width={width} height={height} src={src}></Image></a>
     )
 }
