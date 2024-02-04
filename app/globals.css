@@ -1,33 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*pallete: https://colorhunt.co/palette/a94438d24545e6baa3e4debe*/
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: Inter;
+  src: url("/Inter/Inter.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --pallete-warm-brown: rgb(169, 68, 56);
+  --pallete-warm-pink: rgb(210, 69, 69);
+  --pallete-warm-salmon: rgb(230, 186, 163);
+  --pallete-warm-yellow: rgb(228, 222, 190);
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--pallete-warm-salmon);
+  color: var(--pallete-warm-pink);
+  font-family: Inter;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  color: var(--pallete-warm-pink);
+  text-decoration: none;
 }

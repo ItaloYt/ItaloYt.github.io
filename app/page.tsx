@@ -1,113 +1,93 @@
-import Image from "next/image";
+import ProfileRadialGradient from "@/components/svg/radial-gradient";
+import "./profile.css";
+import ImageResize from "@/components/image-resize";
+import NavigationBarLink from "@/components/navigation-bar-link";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+export default function () {
+    return (
+        <main>
+            <div id="Home" className="page">
+                <p id="Title" className="font-size-80px">Hello! My name is Italo Aquino</p>
+                <p id="Greetings" className="font-size-60px">Nice to meet you!</p>
+            </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            <div id="AboutMe" className="page">
+                <p id="Title" className="font-size-100px">About Me</p>
+                <div className="width-75%">
+                    <p id="Info" className="font-size-45px">I am 15 years old and I absolutely love programming, but I lack of money so I need a way to get it, my solution was to learn front-end development and here I am, working on this website.<br />It’s really interesting to see how someone can sit all day long an still make money doing things they like and have time to pay attention to their family, that’s one of my reasons to choose front-end development, another reason is that compared to C, assembly and Vulkan, front-end and frameworks like tailwind, bootstrap, nextjs are really easy and fast to learn.<br />You may be cursing me to say that, but I know there’s many other reasons to learn front-end development and to work doing it, no need to throw stones at me.</p>
+                </div>
+            </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <div id="Contacts" className="page">
+                <p id="Title" className="font-size-100px">Contacts</p>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                <div id="ContactList">
+                    <div id="Discord" className="profile-account">
+                        <ProfileRadialGradient></ProfileRadialGradient>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+                        <img src="/Discord.png" className="profile-picture"></img>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+                        <p className="profile-name">#italovh</p>
+                    </div>
+
+                    <a href="https://github.com/ItaloYt" target="_blank">
+                        <div id="Github" className="profile-account">
+                            <ProfileRadialGradient></ProfileRadialGradient>
+
+                            <img src="/Github.png" className="profile-picture"></img>
+
+                            <p className="profile-name">ItaloYt</p>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/italovh" target="_blank">
+                        <div id="Telegram" className="profile-account">
+                            <ProfileRadialGradient></ProfileRadialGradient>
+
+                            <img src="/Telegram.png" className="profile-picture"></img>
+
+                            <p className="profile-name">@italovh</p>
+                        </div>
+                    </a>
+                </div>
+
+                <p id="EmailHint" className="font-size-50px">Email in github profile</p>
+            </div>
+
+            <div id="Skills" className="page">
+                <p id="Title" className="font-size-100px">Skills</p>
+
+                <div id="SkillRows">
+                    <div id="SkillRow1">
+                        <ImageResize src="/Nextjs.webp" href="https://nextjs.org/"></ImageResize>
+                        <ImageResize src="/Html5.webp" href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"></ImageResize>
+                        <ImageResize src="/Css3.webp" href="https://developer.mozilla.org/en-US/docs/Web/CSS"></ImageResize>
+                        <ImageResize src="/Javascript.webp" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"></ImageResize>
+                        <ImageResize src="/Typescript.webp" href="https://www.typescriptlang.org/docs/"></ImageResize>
+                    </div>
+                    <div id="SkillRow2">
+                        <ImageResize src="/Git.webp" href="https://git-scm.com/doc"></ImageResize>
+                        <ImageResize src="/React.webp" href="https://react.dev/"></ImageResize>
+                        <ImageResize src="/Tailwind.webp" href="https://v2.tailwindcss.com/docs"></ImageResize>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Projects" className="page">
+                <p id="Title" className="font-size-100px">Projects</p>
+
+                <div id="Nothing">
+                    <p className="font-size-60px">No projects yet</p>
+                </div>
+            </div>
+
+            <nav id="NavigationBar">
+                <NavigationBarLink to={0}>Home</NavigationBarLink>
+                <NavigationBarLink to={970}>About Me</NavigationBarLink>
+                <NavigationBarLink to={1930}>Contacts</NavigationBarLink>
+                <NavigationBarLink to={2890}>Skills</NavigationBarLink>
+                <NavigationBarLink to={3908}>Projects</NavigationBarLink>
+            </nav>
+        </main >
+    );
 }
